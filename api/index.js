@@ -2,7 +2,9 @@ const Genius = require("genius-lyrics") // import the library
 const Client = new Genius.Client() // setup the Genius Lyrics API
 
 async function retrieveLyrics() {
-  const songs = await Client.songs.search("Siempre así") // Get songs from Pop Smoke
+  const artist = 'Siempre así';
+  console.log('Artist: ' + artist);
+  const songs = await Client.songs.search(artist) // Get songs from Pop Smoke
 
   const indexSongs = Math.floor(Math.random() * Math.floor(songs.length))
   const lyrics = await songs[indexSongs].lyrics() // Get random song
