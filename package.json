@@ -1,0 +1,14 @@
+{
+  "name": "serverlessapivercelsongs",
+  "version": "1.0.0",
+  "description": "Serverless API example with Vercel about songs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gonzalo Concepción Megía",
+  "license": "ISC",
+  "dependencies": {
+    "genius-lyrics": "^4.0.0"
+  }
+}
